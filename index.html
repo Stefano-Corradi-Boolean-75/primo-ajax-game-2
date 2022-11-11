@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.css' integrity='sha512-+QrNe4Kul4TNKwDK+EJM71C9z5I9I/iYLEIJPYTfmXouMSU8tkayWYnOsAKjDAaOOH21+MS747IPTYcD+2euuQ==' crossorigin='anonymous'/>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  
+
+
+  <!-- VueJs -->
+  <script src="https://unpkg.com/vue@3"></script>
+  <title>ajax</title>
+</head>
+<body>
+  
+  <div id="app" class="container p-5">
+    <h1>{{title}}</h1>
+    <div v-if="isLoaded">
+      <h3>Giocatore A: {{giocatoreA}}</h3>
+      <h3>Giocatore B: {{giocatoreB}}</h3>
+      <h4>{{getResult()}}</h4>
+    </div>
+    <div v-else>
+      Loading.....
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
